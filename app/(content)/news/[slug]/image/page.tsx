@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 
 import { DUMMY_NEWS } from '@/dummy-news';
 
-export default function ImagePage({ params }: { params: { slug: string } }) {
+export default function ImagePage({ params }: { readonly params: { slug: string } }) {
   const newsItemSlug = params.slug;
   const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === newsItemSlug);
 

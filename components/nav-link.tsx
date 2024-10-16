@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export default function NavLink({ href, children }) {
+export default function NavLink({ href, children }: { readonly href: string; readonly children: React.ReactNode }) {
   const path = usePathname();
 
   return (

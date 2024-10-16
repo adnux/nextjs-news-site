@@ -1,5 +1,4 @@
-export function GET(request) {
-  console.log('request =====> ', request.method);
+export function GET(request: Request) {
 
   // return Response.json();
   return new Response('Hello!');

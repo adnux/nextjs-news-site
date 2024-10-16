@@ -1,4 +1,10 @@
-export default function ArchiveLayout({ archive, latest }: { archive: React.ReactNode, latest: React.ReactNode }) {
+export default function ArchiveLayout({
+  archive,
+  latest,
+}: {
+  readonly archive: React.ReactNode;
+  readonly latest: React.ReactNode;
+}) {
   return (
     <div>
       <h1>News Archive</h1>
